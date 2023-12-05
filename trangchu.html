@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .logo {
+            width: 30%;
+
+        }
+
+        .logo img {
+            width: 50%;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+
+        .menu .id {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 75px;
+            font-size: 30px;
+            width: 70%;
+
+        }
+
+        .menu .id a {
+            text-decoration: none;
+        }
+
+        .id a {
+            color: red;
+
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            margin-left: 48px;
+        }
+
+        .title a {
+            color: green;
+            text-decoration: none;
+            height: 65px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 20% 80%;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .main .product .anh a {
+            text-decoration: none;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .anh {
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .anh img {
+            width: 60%;
+            height: 85px;
+        }
+
+        .footer {
+            background-color: cornflowerblue;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 990px) {
+
+            .id {
+                width: 100%;
+            }
+
+            .logo {
+                width: 100%;
+                text-align: center;
+            }
+
+            .content {
+                grid-template-columns: auto;
+            }
+
+            .title {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .product .anh {
+                flex-wrap: wrap;
+                width: 50%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo" alt="">
+            <img src="./images/logo.jpg" alt="">
+        </div>
+
+        <div class="id">
+            <a href="">Trang chủ </a>
+            <a href="tintuc.html">Tin tức </a>
+            <a href="">Dịch vụ </a>
+            <a href="">Khuyến mại </a>
+            <a href="">Lịch sử </a>
+            <a href="lienhe.html">Liên hệ </a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="title">
+            <a href="">Khách sạn</a>
+            <a href="">Nhà hàng</a>
+            <a href="">Thời tiết</a>
+            <a href="">Đánh giá</a>
+            <a href="">Bản đồ</a>
+        </div>
+
+        <div class="main">
+            <h2>Hà Nội thủ đô nghìn năm văn hiến</h2>
+
+            <div class="product">
+                <div class="anh">
+                    <img src="./images/anh1.jpg" alt="">
+                    <a href="" style="height: 40px;padding: 10px;">Lăng Chủ tịch Hồ Chí Minh</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh2.png" alt="">
+                    <a href="" style="height: 40px;padding: 10px;">Hồ Gươm</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh3.jpg" alt="">
+                    <a href="" style="height: 40px;padding: 10px;">Văn Miếu Quốc Tử Giám</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh4.jpg" alt="">
+                    <a href="" style="height: 40px;padding: 10px;">Nhà Thờ Lớn</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh5.jpg" alt="" style="padding: 10px;">
+                    <a href="" style="height: 40px;padding: 10px;">Ẩm thực phong phú, đa dạng</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh6.jpg" alt="" style="padding: 10px;">
+                    <a href="" style="height: 40px;padding: 10px;">Phố ẩm thực</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh7.jpg" alt="" style="padding: 10px;">
+                    <a href="" style="height: 40px;padding: 10px;">Trung tâm mua sắm</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+                <div class="anh">
+                    <img src="./images/anh8.jpg" alt="" style="padding: 10px;">
+                    <a href="" style="height: 40px;padding: 10px;">Phố Cổ</a>
+                    <button style="width: 100px;"><a href="">Xem thêm</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <p>Liên hệ: 08 84-84-29 <br> Email: lotustravel@gmail.com</p>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

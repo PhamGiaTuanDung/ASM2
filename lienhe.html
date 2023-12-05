@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+                .body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .logo {
+            width: 30%;
+
+        }
+
+        .logo img {
+            width: 40%;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+
+        .menu .id {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 50px;
+            font-size: 30px;
+            width: 60%;
+
+        }
+
+        .menu .id a {
+            text-decoration: none;
+        }
+
+        .id a {
+            color: red;
+
+        }
+        img {
+            width: 200px;
+        }
+
+        .full {
+            display: flex;
+            justify-content: center;
+        }
+
+        .full .dev {
+            width: 50%;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .full .dev1 {
+            width: 50%;
+        }
+
+        .to input {
+            height: 150px;
+            width: 350px;
+        }
+
+        .footer {
+            background-color: rgb(50, 135, 205);
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        @media screen and(max-width: 990px) {
+            .{
+                width: 45%;
+            }
+            .{
+                height: 250px;
+            }
+            .id{
+                width: 100%;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                margin-bottom: 30px;
+            }
+            .logo{
+                text-align: center;
+                margin: 0 auto;
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="menu">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="">
+        </div>
+
+        <div class="id">
+            <a href="trangchu.html">Trang chủ </a>
+            <a href="tintuc.html">Tin tức </a>
+            <a href="">Dịch vụ </a>
+            <a href="">Khuyến mại </a>
+            <a href="">Lịch sử </a>
+            <a href="">Liên hệ </a>
+        </div>
+    </header>
+    <div class="full">
+        <div class="dev">
+            <div class="container">
+                <div>
+                    <h1>Thông tin liên hệ</h1>
+                </div>
+                <p>Địa chỉ: Số 10 Trịnh Văn Bô Nam Từ Liêm</p>
+                <p>Hotline: 08 84-84-29</p>
+                <p>Email: lotustravel@gmail.com</p>
+                <p>Website: hanoitravel.vn</p>
+            </div>
+
+        </div>
+        <div class="dev1">
+            <div class="container1">
+                <div>
+                    <h1>Liên hệ chúng tôi</h1>
+                </div>
+                <div class="nho1">
+                    <input placeholder="Họ và tên">
+                    <input placeholder="Địa chỉ">
+                </div>
+                <p></p>
+                <div class="nho2">
+                    <input placeholder="Điện thoại">
+                    <input placeholder="Email">
+                </div>
+                <p></p>
+                <div class="to">
+                    <input placeholder="Nội dung">
+                </div>
+            </div>
+            <p></p>
+            <button>Xác nhận</button>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div>
+            <p>Chính sách bảo mật | Điều khoản cần biết | Thông tin liên hệ  :</p>
+        </div>
+
+        <div style="margin-left: -150px;"><p><br></br> Liên hệ: 08 84-84-29 <br> Email: lotustravel@gmail.com</p></div>
+    </footer>
+
+</body>
+
+</html>

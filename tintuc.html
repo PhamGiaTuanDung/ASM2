@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .logo {
+            width: 30%;
+        }
+
+        .logo img {
+            width: 40%;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+
+        .id {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 30px;
+            width: 60%;
+            padding: 20px 10px;
+        }
+
+        .menu .id a {
+            text-decoration: none;
+        }
+
+        .id a {
+            color: red;
+
+        }
+        
+        .baner{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+        }
+        .baner1{
+            width: 40%;
+        }
+        .baner1  img{
+            height: 400px;
+            width: 80%;
+        }
+        .footer {
+            background-color: cornflowerblue;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .dungdev a{
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 990px) {
+            .baner1{
+                width: 45%;
+            }
+            .baner1 img{
+                height: 250px;
+            }
+            .id{
+                width: 100%;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                margin-bottom: 30px;
+            }
+            .logo{
+                text-align: center;
+                margin: 0 auto;
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 576px){
+            .baner1{
+                width: 90%;
+            }
+            .baner1 img{
+                height: 300px;
+            }
+        }
+</style>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="">
+        </div>
+
+        <div class="id">
+            <a href="trangchu.html">Trang chủ </a>
+            <a href="tintuc.html">Tin tức </a>
+            <a href="">Dịch vụ </a>
+            <a href="">Khuyến mại </a>
+            <a href="">Lịch sử </a>
+            <a href="lienhe.html">Liên hệ </a>
+        </div>
+    </header>
+
+<div class="baner">
+    <div class="baner1">
+        <img src="images/anh1.jpg" alt="">
+        <p>Lăng Hồ chủ tịch vào mùa xuâm ấm...<a href="" style="color: black;">xem thêm</a></p>
+    </div>
+    <div class="baner1">
+        <img src="images/anh2.png" alt="">
+        <p>Hồ Hoàn Kiếm vào buổi sáng trong...<a href="" style="color: black;">xem thêm</a></p>
+    </div>
+
+    <div class="baner1">
+        <img src="images/anh3.jpg">
+        <p>Sự trang trọng của Văn Miếu...<a href="" style="color: black;">xem thêm</a></p>
+    </div>
+    <div class="baner1">
+        <img src="images/anh4.jpg">
+        <p>Nhà thờ đá vào buổi sáng sớm...<a href="" style="color: black;">xem thêm</a></p>
+    </div>
+</div>
+
+<div class="dungdev">
+<a href="">Trang kế tiếp</a>
+</div>
+<footer class="footer">
+    <p>Liên hệ: 08 84-84-29 <br> Email: lotustravel@gmail.com</p>
+</footer>
+
+</body>
+</html>
